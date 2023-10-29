@@ -1,0 +1,64 @@
+{
+    "name": "author-template/laravel-package-template",
+    "description": "Laravel template package boilerplate",
+    "keywords": [
+        "AlanD20",
+        "author-template",
+        "laravel-package-template"
+    ],
+    "homepage": "https://github.com/author-template/laravel-package-template",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "AlanD20",
+            "email": "aland20@pm.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2",
+        "illuminate/support": "^10.0",
+        "illuminate/database": "^10.0",
+        "illuminate/console": "^10.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "illuminate/testing": "^10.29",
+        "laravel/pint": "^1.13",
+        "pestphp/pest": "^2.24.0",
+        "phpunit/phpunit": "^10.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AuthorTemplate\\LaravelPackageTemplate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AuthorTemplate\\LaravelPackageTemplate\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage",
+        "format": "vendor/bin/pint src tests --config pint.json"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AuthorTemplate\\LaravelPackageTemplate\\LaravelPackageTemplateServiceProvider"
+            ],
+            "aliases": {
+                "LaravelPackageTemplate": "AuthorTemplate\\LaravelPackageTemplate\\LaravelPackageTemplateFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}

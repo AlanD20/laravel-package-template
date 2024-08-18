@@ -2,6 +2,8 @@
 
 namespace AuthorTemplate\LaravelPackageTemplate\Commands;
 
+use Illuminate\Console\Command;
+
 class LaravelPackageTemplateCommand extends Command
 {
     public $signature = 'init';

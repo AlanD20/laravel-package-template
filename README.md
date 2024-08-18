@@ -4,7 +4,7 @@ This should be you package description and what it does.
 
 ## Getting Started
 
-Clone this boilerplate repository then run `./init.sh` shell script.
+Clone this boilerplate repository then run `./init.sh` bash script.
 
 ```bash
 cd laravel-package-template && ./init.sh <package-name>
@@ -12,7 +12,7 @@ cd laravel-package-template && ./init.sh <package-name>
 
 To trigger GitHub Workflow formatter job, use `!format` in a commit message.
 
-Viist [spatie-package-tools](https://github.com/spatie/laravel-package-tools) to
+Visit [spatie-package-tools](https://github.com/spatie/laravel-package-tools) to
 learn more about how Package Service Provider work.
 
 ## Installation
